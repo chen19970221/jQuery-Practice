@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JQuery 最終作業</title>
+  <link rel="stylesheet" href="./stylesheet/all.css">
+
+</head>
+<body>
+  <!-- navbar -->
+  <div class="bg-light text-end pe-4">
+    <a href="https://www.facebook.com/hexschool" class="fa-brands fa-square-facebook" style="color: #4460a0;">粉絲團</a>
+    <span class="mx-2">|</span>
+    <a href="https://x.com/home" class="fa-brands fa-twitter link-info">追隨我們</a>
+  </div>
+  
+  <!-- header -->
+  <header class="d-flex justify-content-between align-items-center">
+    <a href="https://www.hexschool.com/"><img src="./stylesheet/images/logo.png" alt="logo"></a>
+    <ul class="list-unstyled d-flex mb-0">
+      <li class="me-4"><a href="https://www.hexschool.com/" class="link-primary px-2 py-3 border-bottom border-3 border-primary">首頁</a></li>
+      <li class="me-4"><a href="https://www.hexschool.com/courses/" class="link-primary px-2">產品介紹</a></li>
+      <li class="me-4"><a href="＃" class="link-primary px-2">聯絡我們</a></li>
+    </ul>
+  </header>
+
+
+  <!-- Slider main container -->
+  <div class="swiper mb-5">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" style="background-image: url(./stylesheet/images/banner.png);">
+      <div class=" h-100 d-flex flex-column justify-content-center">
+        <div class="px-5 h-auto text-white bg-banner">
+          <h1 class="mb-0 fw-normal pt-3" style="font-size: 36px;">六角學院</h1>
+          <p class="mb-0 pb-3" style="font-size: 36px;">讓您奠定良好的前端基礎</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+  </div>
+
+
+  <!-- plan -->
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <img class="d-block mx-auto" src="./stylesheet/images/html.png" alt="html">
+            <p class="card-title fs-5 fw-bold text-center">HTML5 基礎教學</p>
+            <div class="card-text">
+              主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方式。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <img class="d-block mx-auto" src="./stylesheet/images/rwd.png" alt="html">
+            <p class="card-title fs-5 fw-bold text-center ">響應式網站設計</p>
+            <div class="card-text fs-7">
+              響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <img class="d-block mx-auto" src="./stylesheet/images/jQuery.png" alt="html">
+            <p class="card-title fs-5 fw-bold text-center">jQuery 實戰教學</p>
+            <ul class="card-text">
+              <li>了解變數的使用方法</li>
+              <li>學習操作 DOM</li>
+              <li>學習數學基本運算方式</li>
+              <li>套件的操作及運用</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sheet -->
+  <div class="container mb-5">
+    <h2 class="fs-4 text-center mb-4">線上及實體課程的差異</h2>
+    <div class="row justify-content-center">
+      <div class="col-11">
+        <table class="table table-hover">
+          <thead class="table-light">
+            <tr>
+              <th scope="col-3">項目</th>
+              <th scope="col-3">Hex School 線上課程</th>
+              <th scope="col-3">一般線上課程</th>
+              <th scope="col-3">實體課程</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">實用</th>
+              <td class="text-primary">較低</td>
+              <td class="text-primary">較低</td>
+              <td>較高</td>
+            </tr>
+            <tr>
+              <th scope="row">學習效果</th>
+              <td>一般</td>
+              <td class="text-primary">較低</td>
+              <td class="text-primary">很好</td>
+            </tr>
+            <tr>
+              <th scope="row">code review</th>
+              <td class="text-primary">有</td>
+              <td>無</td>
+              <td>不一定</td>
+            </tr>
+            <tr>
+              <th scope="row">課程更新速度</th>
+              <td class="text-primary">普通</td>
+              <td class="text-primary">普通</td>
+              <td>較慢</td>
+            </tr>
+            <tr>
+              <th scope="row">多次複習</th>
+              <td class="text-primary">可</td>
+              <td class="text-primary">可</td>
+              <td>不可</td>
+            </tr>
+            <tr>
+              <th scope="row">字幕</th>
+              <td class="text-primary">有</td>
+              <td class="text-primary">不一定</td>
+              <td>板書</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- form -->
+  <div class="bg-form pb-4">
+    <div class="container">
+      <div class="pt-5 mb-4 ">
+        <h2 class="fs-4 text-white text-center fw-normal">對我們的課程有興趣嗎？</h2>
+        <h2 class="fs-4 text-white text-center fw-normal">歡迎留下資料</h2>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <textarea class="form-control rounded-1" name="" id="" cols="50" rows="10"></textarea>
+        </div>
+        <div class="col-6">
+          <div class="mb-2">
+            <label class="form-label text-white fs-7" for="name">姓名</label>
+            <input class="form-control form-control-sm" type="text" name="name" id="name">
+          </div>
+          <div class="mb-2">
+            <label class="form-label text-white fs-7" for="phone">電話</label>
+            <input class="form-control form-control-sm" type="tel" name="phone" id="phone">
+          </div>
+          <div class="mb-2">
+            <label class="form-label text-white fs-7" for="email">信箱</label>
+            <input class="form-control form-control-sm" type="email" name="email" id="email">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- footer -->
+  <div class="container">
+    <div class="py-3 d-flex align-items-center justify-content-between">
+      <img src="./stylesheet/images/footerLogo.png" alt="footerLogo">
+      <div>
+        <p class="mb-0">聯絡我們：<a href="mailto:hexschool@gmail.com" class="link-danger">hexschool@gmail.com</a></p>
+        <p class="mb-0">電話：<a href="tel:+0999123456" class="link-danger">0999123456</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
