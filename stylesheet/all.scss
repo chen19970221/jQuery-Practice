@@ -47,17 +47,34 @@
 @import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
 @import "./components/bg-form";
 @import "./components/bg-banner";
+@import "../node_modules/lightbox2/dist/css/lightbox.css";
+@import "./components/btn-top";
 
 
 a {
   text-decoration: none;
 }
 
-a:before {
-  margin-right: 8px;
+.menu a {
+  padding: 0.5em 0;
+  display: block;
+  text-align: center;
+  transition: all .3s;
+
+
+  &:hover {
+    color:#fff !important;
+    background-color: $primary;
+  }
 }
 
+.menu > li {
+  width:100px;
+}
+
+
 .swiper {
-  width: 1002px;
+  width: 100vw;
   height: 346px;
 }
+
