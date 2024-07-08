@@ -1,8 +1,19 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
+  autoplay: {
+    delay:3000,
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
   // If we need pagination
   pagination: {
@@ -15,8 +26,5 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+
 });

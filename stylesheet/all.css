@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
+@import "../node_modules/lightbox2/dist/css/lightbox.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -7503,6 +7504,10 @@ textarea.form-control-lg {
   top: 0 !important;
 }
 
+.top-25 {
+  top: 25 !important;
+}
+
 .top-50 {
   top: 50% !important;
 }
@@ -7513,6 +7518,10 @@ textarea.form-control-lg {
 
 .bottom-0 {
   bottom: 0 !important;
+}
+
+.bottom-25 {
+  bottom: 25 !important;
 }
 
 .bottom-50 {
@@ -7527,6 +7536,10 @@ textarea.form-control-lg {
   left: 0 !important;
 }
 
+.start-25 {
+  left: 25 !important;
+}
+
 .start-50 {
   left: 50% !important;
 }
@@ -7537,6 +7550,10 @@ textarea.form-control-lg {
 
 .end-0 {
   right: 0 !important;
+}
+
+.end-25 {
+  right: 25 !important;
 }
 
 .end-50 {
@@ -12111,15 +12128,33 @@ textarea.form-control-lg {
   opacity: 0.149;
 }
 
+.btn-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
 a {
   text-decoration: none;
 }
 
-a:before {
-  margin-right: 8px;
+.menu a {
+  padding: 0.5em 0;
+  display: block;
+  text-align: center;
+  transition: all 0.3s;
+}
+.menu a:hover {
+  color: #fff !important;
+  background-color: #00cc99;
+}
+
+.menu > li {
+  width: 100px;
 }
 
 .swiper {
-  width: 1002px;
+  width: 100vw;
   height: 346px;
 }/*# sourceMappingURL=all.css.map */
