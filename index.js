@@ -16,4 +16,14 @@ $(document).ready(function () {
     e.preventDefault();
     $('html, body').animate({scrollTop: 0}, 100);
   })
+  
+  function showBtnCondition(){
+    if($(this).scrollTop()>200){
+      $('.btn-top').fadeIn();
+    }else {
+      $('.btn-top').fadeOut();
+    }
+  }
+  $(window).scroll(showBtnCondition);
+
 });

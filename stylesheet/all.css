@@ -12139,13 +12139,13 @@ a {
   text-decoration: none;
 }
 
-.menu a {
+.menu a, input {
   padding: 0.5em 0;
   display: block;
   text-align: center;
   transition: all 0.3s;
 }
-.menu a:hover {
+.menu a:hover, input:hover {
   color: #fff !important;
   background-color: #00cc99;
 }
